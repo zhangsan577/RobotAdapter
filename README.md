@@ -38,7 +38,6 @@
     cahp_port=9100
     cahp_ip="127.0.0.1"
 
-`RotobAdapter\wwb\version.dll`需要拷贝到WWB收银台执行程序同级目录内，再运行WWB收银台。
 
 ##### 3. 主程序说明
 1）主程序`RobotAdapter.exe`；
