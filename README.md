@@ -8,8 +8,9 @@
         ├── log/
         │   └── YYMMDD.log
         ├── wx/
-        │   ├── cahp.dll
-        │   └── cahps.exe
+        │   ├── config.ini
+        │   ├── wx_cashier_proxy.dll
+        │   └── wx_relay_service.exe
         ├── wwb/
         │   ├── config.ini
         │   ├── wwb_proxy.dll
@@ -26,7 +27,7 @@ there can only be one billing method. The configuration file needs to be modifie
 
     [config]
     type=1
-    cahp_exe=".\wx\cahps.exe"
+    cahp_exe=".\wx\wx_relay_service.exe"
     cahp_port=8032
     cahp_ip="127.0.0.1"
 
@@ -42,9 +43,9 @@ there can only be one billing method. The configuration file needs to be modifie
 ##### 3. RobotAdapter
 1）Main program `RobotAdapter.exe`;
 
-2）Read the `RotobAdapter\config\config.ini` and execute `cahp.exe` or `relay_service.exe`;
+2）Read the `RotobAdapter\config\config.ini` and execute `wx_relay_service.exe` or `relay_service.exe`;
 
-3) Handling membership levels:
+3）Handling membership levels:
 * When creating a new rate plan, it will compare with the backend of the billing software and set the same name for the membership levels.
 * Import based on the name of the membership level, for example, "Gold Member" will be imported with a full character match;
 
