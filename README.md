@@ -28,17 +28,12 @@ there can only be one billing method. The configuration file needs to be modifie
     [config]
     type=1
     cahp_exe=".\wx\wx_relay_service.exe"
-    cahp_port=8032
-    cahp_ip="127.0.0.1"
 
 ###### wwb
 
     [config]
     type=2
     cahp_exe=".\wwb\relay_service.exe"
-    cahp_port=9100
-    cahp_ip="127.0.0.1"
-
 
 ##### 3. RobotAdapter
 1）Main program `RobotAdapter.exe`;
