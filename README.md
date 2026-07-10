@@ -9,8 +9,7 @@
         │   └── YYMMDD.log
         ├── wx/
         │   ├── config.ini
-        │   ├── wx_cashier_proxy.dll
-        │   └── wx_relay_service.exe
+        │   └── wx_wsa_service.exe
         ├── wwb/
         │   ├── config.ini
         │   ├── wwb_proxy.dll
@@ -26,19 +25,24 @@ there can only be one billing method. The configuration file needs to be modifie
 ###### wx
 
     [config]
-    type=1
-    cahp_exe=".\wx\wx_relay_service.exe"
+    #type=1
+    cahp_exe=".\wx\wx_wsa_service.exe"
+	robot=8053
+	service=9100
+	
 
 ###### wwb
 
     [config]
-    type=2
+    #type=2
     cahp_exe=".\wwb\relay_service.exe"
+	robot=8053
+	service=9100
 
 ##### 3. RobotAdapter
 1）Main program `RobotAdapter.exe`;
 
-2）Read the `RotobAdapter\config\config.ini` and execute `wx_relay_service.exe` or `relay_service.exe`;
+2）Read the `RotobAdapter\config\config.ini` and execute `\wx\wx_*.exe` or `\wwb\relay_*.exe`;
 
 3）Handling membership levels:
 * When creating a new rate plan, it will compare with the backend of the billing software and set the same name for the membership levels.
