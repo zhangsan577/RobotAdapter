@@ -26,7 +26,7 @@ there can only be one billing method. The configuration file needs to be modifie
 
     [config]
     type=1
-    cahp_exe=".\wx\wx_wsa_service.exe"
+    cahp_path=".\wx\wx_wsa_service.exe"
     cahp_port=9100
     cahp_ip="127.0.0.1"
 	
@@ -35,7 +35,7 @@ there can only be one billing method. The configuration file needs to be modifie
 
     [config]
     type=2
-    cahp_exe=".\wwb\relay_service.exe"
+    cahp_path=".\wwb\relay_service.exe"
     cahp_port=9100
     cahp_ip="127.0.0.1"
 
