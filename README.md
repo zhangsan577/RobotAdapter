@@ -14,6 +14,10 @@
         │   ├── config.ini
         │   ├── wwb_proxy.dll
         │   └── relay_service.exe
+        ├── wwb_ol/
+        │   ├── config.ini
+        │   ├── wwb_proxy.dll
+        │   └── relay_service.exe		
         └── RobotAdapter.exe
 
 ##### 2. Config files
@@ -39,14 +43,24 @@ there can only be one billing method. The configuration file needs to be modifie
     cahp_port=9100
     cahp_ip="127.0.0.1"
 
+###### wwb_ol
+
+    [config]
+    type=2
+    cahp_path=".\wwb_ol\relay_service.exe"
+    cahp_port=9100
+    cahp_ip="127.0.0.1"
+
+
 ##### 3. RobotAdapter
 1）Main program `RobotAdapter.exe`;
 
 2）Read the `RotobAdapter\config\config.ini` and execute `\wx\wx_*.exe` or `\wwb\relay_*.exe`;
 
-3）Handling membership levels:
+3）member levels:
 * When creating a new rate plan, it will compare with the backend of the billing software and set the same name for the membership levels.
 * Import based on the name of the membership level, for example, "Gold Member" will be imported with a full character match;
+
 
 ##### 4. How to call the robot
 
