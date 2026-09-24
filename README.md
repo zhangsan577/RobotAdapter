@@ -63,8 +63,18 @@ there can only be one billing method. The configuration file needs to be modifie
 
 
 ##### 4. How to call the robot
-
+###### cashier
     [config]
     charge_type=2
     robot_adapter_port=8053
     robot_adapter_ip="127.0.0.1"
+	
+###### server
+	[lzcashiervipsrv]
+    charge_type=2
+    robot_adapter_port=8053
+    robot_adapter_ip="127.0.0.1"
+	
+* The "robot_adapter_ip" in the server config file，fill cashier 's IP.
+	
+	
